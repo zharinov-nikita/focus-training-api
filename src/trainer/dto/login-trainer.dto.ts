@@ -1,6 +1,4 @@
-export class CreateTrainerDto {
-  readonly name: string
-  readonly email: string
+export class LoginTrainerDto {
   readonly loging: string
   readonly password: string
 }
