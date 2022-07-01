@@ -21,6 +21,6 @@ export class TrainerModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
       .apply(TrainerMiddleware)
-      .forRoutes({ path: '*', method: RequestMethod.ALL })
+      .forRoutes({ path: 'api/trainer/login*', method: RequestMethod.ALL })
   }
 }
