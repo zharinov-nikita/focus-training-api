@@ -1,4 +1,4 @@
 export class LoginTrainerDto {
-  readonly login: string
-  readonly password: string
+  readonly login?: string
+  readonly password?: string
 }

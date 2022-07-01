@@ -15,7 +15,11 @@ export class TrainerService {
     return await this.trainerModel.create(dto)
   }
 
-  async login(dto: LoginTrainerDto) {
+  async login(dto: LoginTrainerDto): Promise<Trainer> {
     return await this.trainerModel.findOne(dto)
+  }
+
+  async findOne(dto: LoginTrainerDto): Promise<Trainer> {
+    return await this.trainerModel.findOne({ login: dto.login })
   }
 }
